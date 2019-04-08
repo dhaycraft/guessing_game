@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # FIle: guessinggame.sh
 
-file_count=$(ls -1 | wc -l)
+file_count=$(ls -l | grep -v ^l | wc -l)
 
 while [ "$guess" != "$file_count" ]
 do
