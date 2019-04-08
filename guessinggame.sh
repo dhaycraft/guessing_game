@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # FIle: guessinggame.sh
-
+function guessing
+{
 file_count=$(ls -l | grep -v ^l | wc -l)
 
 while [ "$guess" != "$file_count" ]
@@ -20,3 +21,5 @@ do
                 echo "What?"
         fi
 done
+}
+guessing
